@@ -113,7 +113,6 @@ public class Utils {
             do {
                 randomX = generator.nextInt((maxX - minX) + 1) + minX;
                 randomY = generator.nextInt((maxY - minY) + 1) + minY;
-                System.out.println(randomX +" "+randomY);
             }while(dm.getStateCells()[randomX][randomY].getState() == 1);
 
             dm.getStateCells()[randomX][randomY].alive();
